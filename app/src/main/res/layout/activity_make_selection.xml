@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_white"
+    android:padding="30dp"
+    tools:context=".Common.LoginSignUp.ForgotPassword">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_icon"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make\nSelection"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:fontFamily="@font/muli_black"
+            android:textAllCaps="true"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/make_selection_detail"
+            android:textSize="20dp"
+            android:textAllCaps="true"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/md_white_off"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/verify_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mobile_custom_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp" />
+            <TextView
+                android:id="@+id/verify_mobile_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Via Sms"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/muli_light"
+                android:textSize="25dp"
+                android:layout_toRightOf="@id/verify_mobile"
+                android:textAllCaps="true"
+                android:layout_marginTop="30dp"/>
+            <TextView
+                android:id="@+id/verify_mobile_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91 9662472457"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/muli_light"
+                android:layout_below="@id/verify_mobile_title"
+                android:textSize="25dp"
+                android:layout_toRightOf="@id/verify_mobile"
+                android:textAllCaps="true" />
+            <Button
+                android:id="@+id/verify_via_sms"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/md_white_off"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/verify_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_email_24"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp" />
+            <TextView
+                android:id="@+id/verify_email_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Via Email"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/muli_light"
+                android:textSize="25dp"
+                android:layout_toRightOf="@id/verify_email"
+                android:textAllCaps="true"
+                android:layout_marginTop="30dp"/>
+            <TextView
+                android:id="@+id/verify_email_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="abcd@gmail.com"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/muli_light"
+                android:layout_below="@id/verify_email_title"
+                android:textSize="20dp"
+                android:layout_toRightOf="@id/verify_email"
+                android:textAllCaps="true" />
+            <Button
+                android:id="@+id/verify_via_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
